@@ -10,13 +10,14 @@ func HTTPServer() {
 		fmt.Fprintf(w, "Welcome to the HTTP Server!")
 	})
 
-	go func() {
+	// go func() {
 		fmt.Println("Starting HTTP server on port 8080...")
 		err := http.ListenAndServe(":8080", nil)
 		if err != nil {
 			fmt.Println(err)
 		}
-	}()
+	// }()
 
-	select {}
+	//select {}
 }
+
